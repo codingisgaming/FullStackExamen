@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+  /* Cyberpunk Color Palette */
+  --bg-dark: #050510;
+  --bg-panel: rgba(20, 20, 35, 0.7);
+  --bg-panel-hover: rgba(30, 30, 50, 0.8);
+
+  --neon-cyan: #00f3ff;
+  --neon-pink: #ff00ff;
+  --neon-green: #39ff14;
+  --neon-yellow: #ffee00;
+  --neon-purple: #bc13fe;
+
+  --text-main: #e0e0e0;
+  --text-dim: #94a3b8;
+
+  --glass-border: 1px solid rgba(0, 243, 255, 0.1);
+  --neon-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+  --neon-text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
+
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  background-image:
+    linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  min-height: 100vh;
+}
+
+code {
+  font-family: var(--font-mono);
+}
